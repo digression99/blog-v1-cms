@@ -1,0 +1,27 @@
+{
+  "info": {
+    "name": "Posts"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "This is title for a post"
+    },
+    "content": {
+      "type": "richtext",
+      "default": "This is the content field for the post.",
+      "required": true
+    },
+    "author": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  },
+  "connection": "default",
+  "collectionName": "posts"
+}

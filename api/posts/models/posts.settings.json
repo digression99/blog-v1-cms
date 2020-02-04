@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "posts",
   "info": {
     "name": "Posts"
   },
@@ -20,8 +22,26 @@
     "author": {
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "slug": {
+      "type": "string",
+      "unique": true,
+      "minLength": 6,
+      "private": false,
+      "required": true
+    },
+    "bannerImage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "quote": {
+      "type": "string",
+      "default": "This is default quote."
+    },
+    "tags": {
+      "collection": "tag"
     }
-  },
-  "connection": "default",
-  "collectionName": "posts"
+  }
 }

@@ -28,7 +28,7 @@
       "unique": true,
       "minLength": 6,
       "private": false,
-      "required": true
+      "required": false
     },
     "bannerImage": {
       "model": "file",

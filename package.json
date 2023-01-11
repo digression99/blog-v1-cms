@@ -13,7 +13,7 @@
   "devDependencies": {},
   "dependencies": {
     "dotenv": "^8.2.0",
-    "knex": "<0.20.0",
+    "knex": "<2.5.0",
     "mysql": "^2.18.1",
     "pg": "latest",
     "slugify": "^1.3.6",
